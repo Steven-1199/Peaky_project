@@ -20,7 +20,7 @@ module.exports = {
 
       max600: { max: "600px" },
       max510: { max: "510px" },
-      max400: { max: "400px" },
+      max400: { max: "420px" },
       max420: { max: "420px" },
 
       min1225: { min: "1300px" },
