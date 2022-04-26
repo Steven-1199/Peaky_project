@@ -14,7 +14,7 @@ function SignInPage() {
   const navigate = useNavigate();
   const dispatch = useDispatch();
   const [formData, setFormData] = useState(initformData);
-  const gooleSuccess = async (res) => {
+  /*const gooleSuccess = async (res) => {
     const result = res?.profileObj;
     const token = res?.tokenId;
     dispatch({ type: "AUTH", data: { result, token } });
@@ -24,7 +24,7 @@ function SignInPage() {
     console.log(err);
     console.log("Google Sign In was unsuccessful");
     toast.error("Google Sign In was unsuccessful");
-  };
+  };*/
   const onChangeFuc = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
@@ -101,7 +101,7 @@ function SignInPage() {
               <div className="form-control  text-center hidden">
                 <h2 className="font-bold text-[#17252A]">OR</h2>
               </div>
-              <div className="form-control hidden">
+              {/* <div className="form-control hidden">
                 <GoogleLogin
                   clientId="266382544587-ka3jebk04sbh8vgtpagc9r9ks9cpb53e.apps.googleusercontent.com"
                   render={(renderProps) => (
@@ -118,7 +118,7 @@ function SignInPage() {
                   onFailure={gooleFailure}
                   cookiePolicy="single_host_origin"
                 />
-              </div>
+              </div>*/}
 
               <Link to="/SignUpPage" className="self-end mt-2">
                 <p className="text-left text-[0.8rem]">
